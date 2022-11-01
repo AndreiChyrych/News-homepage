@@ -1,5 +1,3 @@
-News-homepage
-
 News homepage created by using:
 
 1.HTML
