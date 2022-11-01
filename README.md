@@ -1,4 +1,4 @@
-# News-homepage
+News-homepage
 
 News homepage created by using:
 
