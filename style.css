@@ -46,7 +46,8 @@ body {
 }
 
 .mainImg {
-  width: 100%; 
+  width: 100%;
+  
 }
 
 .mainTitle {
@@ -85,10 +86,24 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 500px) {
+  .tips{
+    display: flex;
+    flex-direction: row; 
+  }
+  .tipsImg {
+    width: 100%;
+    max-height: 150px;
+  }
+  .tipsSection1, .tipsSection2, .tipsSection3 {
+    width: 100%;
+    max-height: 150px;
+}
+}
+
 .tipsImg {
   width: 100%;
 }
 
-.tipsSection1, .tipsSection2, .tipsSection3 {
-}
+
 
