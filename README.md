@@ -6,4 +6,4 @@ News homepage created by using:
 
 3.Google Fonts
 
-Solution can be seen here: 
+Solution can be seen here:  https://andreichyrych.github.io/News-homepage/
