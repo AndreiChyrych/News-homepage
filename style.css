@@ -7,10 +7,16 @@ body {
 }
 
 .navBar {
-  display: flex;
-  flex-direction: row;
-  border: solid 1px;
-  justify-content: flex-end;
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px;
+    justify-content: flex-end;
+  }
 }
 
 .mainContent {
