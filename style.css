@@ -9,7 +9,6 @@ body {
 
 .navBar {
   display: none;
-  border: solid 1px;
 }
 
 @media screen and (min-width: 600px) {
@@ -75,7 +74,7 @@ button {
   grid-template-columns: repeat(6,1fr);
   gap: 1em;
   margin-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 800px) {
   .tips{
@@ -83,9 +82,9 @@ button {
     grid-template-columns: 0.55fr 1fr;
     gap: 1em;
     margin-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
-
+}
 .tipsImg {
-  max-width: 100%;
+  width: 100%;
 }
