@@ -3,64 +3,56 @@
 }
 
 body {
-  height: 100vh; 
+  height: 100vh;
   background-color: hsl(36, 100%, 99%);
 }
 
 .navBar {
   display: none;
+  border: solid 1px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .navBar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin: 15px 0;
+    padding: 10px;
   }
 }
 
-.mainContent {
-  display: flex;
-  flex-direction: column;
+.container {
+  gap: 1em;
+  display: grid;
+  grid-template-areas:
+    "item1 item1 item4"
+    "item2 item3 item4";
 }
 
-@media screen and (min-width: 500px) {
-  .mainContent {
-    display: grid; 
-    grid-template-areas:
-      "mainImg mainImg New"
-      "mainTitle readMoreSection New";
-  }
-  .mainImg {
-    grid-area: mainImg;
-  }
-  .mainTitle {
-    grid-area: mainTitle;
-  }
-  .readMoreSection {
-    grid-area: readMoreSection;
-  }
-  .new {
-    grid-area: New;
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column; 
   }
 }
 
+.item1 {
+  grid-area: item1;
+}
 .mainImg {
-  width: 100%;
-  
+  max-width: 100%;
 }
 
-.mainTitle {
-  font-weight: bold;
-  font-size: 45px;
+.item2 {
+  grid-area: item2;
+  border: solid 1px;
 }
 
-.mainText {
-  color: hsl(236, 13%, 42%); 
-  font-size: 15px;
-  line-height: 1.6;
+.item3 {
+  grid-area: item3;
+  border: solid 1px;
 }
-
 button {
   background-color: hsl(5, 85%, 63%);
   color: white;
@@ -71,36 +63,29 @@ button {
   text-transform: uppercase;
 }
 
-.new {
+.item4 {
+  grid-area: item4;
   color: white;
   background-color: hsl(240, 100%, 5%);
-  margin-top: 25px;
   padding: 15px;
 }
 
-.tips { 
+.tips {
   display: grid;
-  grid-template-columns: 0.55fr 1fr;
+  grid-template-columns: repeat(6,1fr);
   gap: 1em;
   margin-top: 30px;
   padding-bottom: 60px;
 }
-
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 800px) {
   .tips{
     display: grid;
-    grid-template-columns: repeat(6, 1fr)
+    grid-template-columns: 0.55fr 1fr;
+    gap: 1em;
+    margin-top: 30px;
+    padding-bottom: 60px;
   }
-  .tipsImg {
-    width: 100%;
-  }
-  .tipsSection1, .tipsSection2, .tipsSection3 {
-    width: 100%;
-}
-  
-}
+
 .tipsImg {
-  width: 100%;
+  max-width: 100%;
 }
-
-
