@@ -5,6 +5,15 @@
 body {
   height: 100vh;
   background-color: hsl(36, 100%, 99%);
+  padding: 2em;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+  height: 100vh;
+  background-color: hsl(36, 100%, 99%);
+  padding: 0em;
+} 
 }
 
 .navBar {
