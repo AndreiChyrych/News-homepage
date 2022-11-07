@@ -2,7 +2,7 @@
   font-family: 'Inter', sans-serif;
 }
 
-  body {
+body {
   height: 100vh;
   background-color: hsl(36, 100%, 99%);
 }
@@ -11,13 +11,26 @@
   display: none;
 }
 
+.navBarImg {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+a {
+  color: hsl(240, 100%, 5%);
+  text-decoration: none;
+}
+
 @media screen and (min-width: 600px) {
   .navBar {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 15px 0;
-    padding: 10px;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
   }
 }
 
@@ -50,7 +63,7 @@
 
 .item3 {
   grid-area: item3;
-  border: solid 1px;
+  
 }
 button {
   background-color: hsl(5, 85%, 63%);
