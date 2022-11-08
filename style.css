@@ -11,20 +11,36 @@ body {
   body {
     margin-inline: 5em;
   }
+  
 }
 
 .navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 40px 0;
+  }
+
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    display: none;
+  }
+}
+
+.navBarMeny {
   display: none;
 }
 
-.navBarImg {
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5em;
+@media screen and (max-width: 500px) {
+  .navBarMeny {
+    display: block;
+  }
 }
 
 a {
@@ -32,13 +48,6 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
-  .navBar {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0 15px 0;
-  }
-}
 
 .container {
   gap: 1em;
