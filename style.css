@@ -9,7 +9,7 @@ body {
 
 @media screen and (min-width: 800px) {
   body {
-    margin: 20em;
+    margin-inline: 4em;
   }
 }
 
